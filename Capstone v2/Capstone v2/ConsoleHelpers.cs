@@ -1,6 +1,6 @@
 
 
-//console helpers class and console and menu item  required for capstone
+//console helpers class, exit menu item , console and menu item  required for capstone
 using System.Text;
 namespace Capstone_v2
 
