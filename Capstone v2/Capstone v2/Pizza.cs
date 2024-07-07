@@ -6,13 +6,15 @@ namespace Capstone_v2;
 
 public class Pizza
 {
-    //unique ID
-    //food name, price, recepie. 
+    //struct then {
+    //private unique ID
+    //public food name, price, recepie.} 
 }
 //when selecting no chicken it's supposed to be a pizza without that ingredient? so maybe i need to make multiple lists
 //that then you can pick?
 public class Toppings
 {
-    //unique ID
-    //food name, price, recepie. 
+    //struct then {
+    //private unique ID 
+    //public food name, price, recepie.} 
 }

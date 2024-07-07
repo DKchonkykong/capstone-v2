@@ -2,6 +2,7 @@ namespace Capstone_v2;
 using System.Text;
 
 //currently this does not work at the moment main idea is that this is similar to how it is done in summative 8
+//currently holds the logic for shopManager
 public class FoodManager
 {
         public List<ShopManager> Ingredients { get; private set; }

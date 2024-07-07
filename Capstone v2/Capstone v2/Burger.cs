@@ -3,12 +3,14 @@ namespace Capstone_v2;
 //currently there's nothing here, would have simple values like price and name and then be linked to a list of some kind
 public class Burger
 {
-    //unique ID
-    //food name, price, recepie. 
+    //struct then {
+    //private unique ID
+    //public food name, price, recepie.} 
 }
 
 public class Garnishes
 {
-    //unique ID
-    //food name, price, recepie.  
+    //struct then {
+    //private unique ID
+    //public food name, price, recepie.}   
 }

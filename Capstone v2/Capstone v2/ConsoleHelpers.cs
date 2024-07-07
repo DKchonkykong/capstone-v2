@@ -1,8 +1,12 @@
-
-
-//console helpers class, exit menu item , console and menu item  required for capstone
 using System.Text;
 namespace Capstone_v2
+
+    //console helpers class, exit menu item , console and menu item  required for capstone
+//Menus stuff is another part i think i might reuse stuff from before e.g.,
+    //public override createMenu
+//{_menuItems.clear()
+//_menuItems.Add(DisplayAllFoods)
+//_menuItems.Add(AddFoodItem)}  this is how it's supposed to look and how it will show up currently used in shopManager
 
 {
     public static class ConsoleHelpers
