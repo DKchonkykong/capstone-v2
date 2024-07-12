@@ -25,4 +25,8 @@ public class FoodManager
             }
             return sb.ToString();
         }
+        //price of the ingredients will be used here and the full price of the food
+        //food list here: 
+        //pizza: Margharita| tomato sauce 050, cheese 040| 350
+        //simple burger: beef 050, cheese 040 | 450
     }
