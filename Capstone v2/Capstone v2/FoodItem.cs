@@ -32,13 +32,23 @@ public class FoodItem
 
 // internal class ShopManager
 // {
-//     _food = new List<FoodItem>();
-//
+//     list<FoodItemObject> FoodList = new List<FoodItemObject>();
+//    This will make two food item objects
 //     FoodItem fooditem1 = new FoodItem("Pizza", "Margharitta", 500);
 //
-//     _food.Add(fooditem1);
-//
+// I add those fooditem object to the list
 //     FoodItem fooditem2 = new FoodItem("Hamburger", "Cheesebuger", 350);
-//
+//     _food.Add(fooditem1);
 //     _food.Add(fooditem2);
 // }
+//
+// This would make it so it is diplayed in the console
+// However i am sure it will not display it correctly due to
+// how the menus work (currently have no solution for it)
+// foreach (var fooditem in foodList)
+//{
+// console.writeLine(fooditem);
+//}
+//maybe utilizing Tostring but i only want to show all lines from both pizza and burger
+//
+// public override string ToString()
