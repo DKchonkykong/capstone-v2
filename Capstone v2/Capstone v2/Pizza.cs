@@ -30,7 +30,7 @@ public class Toppings
     //struct then {
     //private unique ID 
     //public food name, price, recepie.} 
-    //this is supposed to be sorta like tags that will be used in other areas e.g., food manager
+    //this is basic idea that I have here
     public double Price { get; set; }
     public string Name { get; set; }
 

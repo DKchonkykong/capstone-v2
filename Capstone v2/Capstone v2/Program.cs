@@ -1,3 +1,9 @@
-﻿// Currently nothing here of note but would be used in order to go to menus e.g., shop manager and have that be selected
-//would need to have an action class of things happening in the program (will be in menus, will be at the end of the program) 
+﻿using Capstone_v2;
+//this is code to select the main menus
+//unsure if need to have restaurant name here or in MainMenu
 Console.WriteLine("Hello, World!");
+
+FoodManager foodManager = new FoodManager();
+
+MainMenu MainMenu = new MainMenu(foodManager);
+MainMenu.Select();

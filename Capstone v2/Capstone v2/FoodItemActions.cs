@@ -1,6 +1,7 @@
-//useless class atm it's supposed to have all the logic for the class
 namespace Capstone_v2;
 
+//useless class atm it's supposed to have all the logic for the class
+//perhaps have it so logic from AddNewFood or AddNewOrder be here?
 public class FoodItemActions
 {
     //one way of doing this

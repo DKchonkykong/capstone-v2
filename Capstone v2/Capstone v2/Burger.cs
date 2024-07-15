@@ -7,7 +7,7 @@ public class Burger
     //private unique ID
     //public food name, price, recepie.} 
     
-    //how it's gonna be with tags similar to what i've done before
+    //basic outline of how it's going to be
     public double Price { get; set; }
     public string Name { get; set; }
 

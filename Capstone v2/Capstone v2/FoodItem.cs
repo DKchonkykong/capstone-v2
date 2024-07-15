@@ -30,7 +30,7 @@ public class FoodItem
 //sample code atm not working but basic idea was to have it so it shows up when picking "select all food items"
 //it displays it there
 
-// internal class ShopManager
+// internal class FoodManager
 // {
 //     list<FoodItemObject> FoodList = new List<FoodItemObject>();
 //    This will make two food item objects
