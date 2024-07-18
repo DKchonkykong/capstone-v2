@@ -135,16 +135,12 @@ namespace Capstone_v2
         }
     }
 
-    abstract class MenuItem // TODO Make Interface?
-    {
-        public virtual string MenuText()
-        {
-            return "";
-        }
-        public virtual void Select()
-        {
-            return;
-        }
+  internal abstract class MenuItem
+  {
+      public abstract string MenuText();
+
+        public abstract void Select();
+
     }
 //there already is this
     class ExitMenuItem : MenuItem

@@ -15,10 +15,10 @@ namespace Capstone_v2;
     // for some reason this doesn't show up correctly 
     {
         _menuItems.Clear();
-        _menuItems.Add(new AddNewOrderMenuItem(_manager));
-        _menuItems.Add(new AddNewFoodMenuItem(_manager));
-        _menuItems.Add(new DisplayAllOrderMenu(_manager));
-        _menuItems.Add(new DisplayAllFoodMenuItem(_manager));
+        _menuItems.Add(new MainMenuItem.AddNewOrderMenuItem(_manager));
+        _menuItems.Add(new MainMenuItem.AddNewFoodMenuItem(_manager));
+        _menuItems.Add(new MainMenuItem.DisplayAllOrderMenu(_manager));
+        _menuItems.Add(new MainMenuItem.DisplayAllFoodMenuItem(_manager));
         _menuItems.Add(new ExitMenuItem(this));
     }
     public override string MenuText()
