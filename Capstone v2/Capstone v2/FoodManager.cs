@@ -22,17 +22,26 @@ internal class FoodManager
     {
         get { return _food; }
     }
+//this is supposed to work
+    public IEnumerable<MainMenuItem.OrderMenu> OrderMenus {get { return _order; } }
 
-    public IEnumerable<MainMenuItem.OrderMenu> OrderMenus
+//got this fixed sorta
+// only works adding customer name not displaying it?
+      public FoodManager()
     {
-        get { return _order; }
-    }
+        
+        _food = new List<FoodItem>();
 
+        FoodItem fooditem1 = new FoodItem("Pizza", "Margharitta", 500);
 
-    //price of the ingredients will be used here and the full price of the food
-    //basic idea is to have a list of both pizza and burger and in it you get the recepie 
-    public FoodManager()
-    {
+        _food.Add(fooditem1);
+
+        FoodItem fooditem2 = new FoodItem("Hamburger", "Cheesebuger", 350);
+        
+        _food.Add(fooditem2);
+        
+        _order = new List<MainMenuItem.OrderMenu>();
+        _order.Add(new MainMenuItem.OrderMenu("Simon"));
     }
 
     public List<FoodManager> Pizza { get; private set; }
@@ -40,15 +49,28 @@ internal class FoodManager
 
     //pizza: Margharita| tomato sauce 050, cheese 040| 350
     //simple burger: beef 050, cheese 040 | 450
+    
+    //Should be adding a food item
     public void AddNewFoodItem(FoodItem food)
     {
         _food.Add(food);
     }
+    
+    //this line seems to work now
     public void AddOrder(MainMenuItem.OrderMenu order) { _order.Add(order); }
-//method for adding a copy of a recepie
-
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 //this is a useless class since it doesn't do anything
 public class UselessClass

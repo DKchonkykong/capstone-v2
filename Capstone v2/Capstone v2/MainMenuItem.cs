@@ -51,7 +51,7 @@ internal class MainMenuItem
             Console.WriteLine("Enter a customer name.");
             string name = Console.ReadLine();
             OrderMenu order = new OrderMenu(name);
-            //Got this issue and unsure why it doesn't work 
+            //This also seems to be problematic which causes it to not work idk why
             _Ingredients.AddOrder(order);
         }
     }
@@ -60,21 +60,24 @@ internal class MainMenuItem
     {
         private IEnumerable<OrderMenu> _order;
 
+        // another constructor here needed for it to run
+//might be the issue in why it might not be working
+//Constructor but nothing in it
+       
+        public DisplayAllOrderMenu(FoodManager manager)
+        {
+        }
+        //another constructor for orders
         public DisplayAllOrderMenu(IEnumerable<OrderMenu> orders)
         {
             _order = orders;
         }
-// another constructor here needed for it to run
-        public DisplayAllOrderMenu(FoodManager manager)
-        {
-            
-        }
-
+        
         public override string MenuText()
         {
             return "display all orders";
         }
-
+//should have it so it is selected
         public override void Select()
         {
             foreach (OrderMenu order in _order)
@@ -117,7 +120,9 @@ internal class MainMenuItem
             FoodItem food = new FoodItem(foodName, ingredients, price);
 
             //supposed to be something here, but it doesn't seem to be working? idk why
-            //  _ingredients.AddNewFoodMenuItem(food);
+            //need to have it to work but idk how to fix? ill leave this alone 
+             
+            //3
         }
     }
 

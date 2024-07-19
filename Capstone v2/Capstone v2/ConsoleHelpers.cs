@@ -105,7 +105,6 @@ namespace Capstone_v2
 
         public abstract void CreateMenu();
 
-
         public override void Select()
         {
             IsActive = true;
@@ -117,11 +116,11 @@ namespace Capstone_v2
                 _menuItems[selection].Select();
             } while (IsActive);
         }
-
-        public void ClearMenu()
-        {
-            _menuItems.Clear();
-        }       
+//idk if this section is needed it just seems to clear the menu 
+        // public void ClearMenu()
+        // {
+        //     _menuItems.Clear();
+        // }       
 
         public override string ToString()
         {
@@ -134,13 +133,11 @@ namespace Capstone_v2
             return sb.ToString();
         }
     }
-
+//this is where every MenuItem goes to for selecting and text
   internal abstract class MenuItem
   {
+      public abstract void Select();
       public abstract string MenuText();
-
-        public abstract void Select();
-
     }
 //there already is this
     class ExitMenuItem : MenuItem
