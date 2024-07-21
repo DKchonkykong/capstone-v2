@@ -4,6 +4,5 @@
 Console.WriteLine("Hello, World!");
 
 FoodManager foodManager = new FoodManager();
-
 MainMenu MainMenu = new MainMenu(foodManager);
 MainMenu.Select();

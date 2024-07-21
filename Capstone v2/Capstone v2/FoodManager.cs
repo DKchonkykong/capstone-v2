@@ -40,8 +40,6 @@ internal class FoodManager
         
         _food.Add(fooditem2);
         
-        _order = new List<MainMenuItem.OrderMenu>();
-        _order.Add(new MainMenuItem.OrderMenu("Simon"));
     }
 
     public List<FoodManager> Pizza { get; private set; }

@@ -1,16 +1,14 @@
 using System.Text;
+
 namespace Capstone_v2
 
-    //console helpers class, exit menu item , console and menu item  required for capstone
-//Menus stuff is another part i think i might reuse stuff from before e.g.,
-    //public override createMenu
-//{_menuItems.clear()
-//_menuItems.Add(DisplayAllFoods)
-//_menuItems.Add(AddFoodItem)}  this is how it's supposed to look and how it will show up currently used in shopManager
 
 {
+    //console helpers makes it so the app functions correctly
     public static class ConsoleHelpers
     {
+        //This is for selecting things you want to pick
+        //could be an alterative way to select items?
         public static bool GetChoice(string pMessage)
         {
             Console.WriteLine(pMessage);
@@ -19,11 +17,11 @@ namespace Capstone_v2
 
             choice = choice.ToLower().Replace(" ", "");
 
-            if(choice == "y" || choice == "yes")
+            if (choice == "y" || choice == "yes")
             {
                 return true;
             }
-            else if(choice == "n" || choice == "no")
+            else if (choice == "n" || choice == "no")
             {
                 return false;
             }
@@ -33,15 +31,18 @@ namespace Capstone_v2
             }
         }
 
+//This one checks the name from input and adds untitled if there's nothing.
+//could be a way to add some error checking in the order section
         public static string GetNameFromInput(string pMessage)
         {
             Console.WriteLine(pMessage);
-            
+
             string? input = Console.ReadLine();
 
             return input == null ? "Untitled" : input;
         }
-        
+
+        //this is original to the stable version of capstone
         public static int GetIntegerInRange(int pMin, int pMax, string pMessage)
         {
             if (pMin > pMax)
@@ -72,10 +73,13 @@ namespace Capstone_v2
                 {
                     return result;
                 }
+
                 Console.WriteLine($"{result} is not between {pMin} and {pMax} inclusive.");
             } while (true);
         }
 
+//Unsure if needed 
+//However need to have it to be able to run program
         public static float GetFloatFromInput(string pMessage)
         {
             float result;
@@ -97,10 +101,11 @@ namespace Capstone_v2
         }
     }
 
-    abstract class ConsoleMenu : MenuItem
+//console menu is pretty much identical to the standard version
+    internal abstract class ConsoleMenu : MenuItem
     {
         protected List<MenuItem> _menuItems = new List<MenuItem>();
-     
+
         public bool IsActive { get; set; }
 
         public abstract void CreateMenu();
@@ -130,16 +135,21 @@ namespace Capstone_v2
             {
                 sb.AppendLine($"{i + 1}. {_menuItems[i].MenuText()}");
             }
+
             return sb.ToString();
         }
     }
+
 //this is where every MenuItem goes to for selecting and text
-  internal abstract class MenuItem
-  {
-      public abstract void Select();
-      public abstract string MenuText();
+//pretty much identically as the stable version of capstone
+    internal abstract class MenuItem
+    {
+        public abstract void Select();
+        public abstract string MenuText();
     }
-//there already is this
+
+//there already is this in stable ver.
+//however this has some extra stuff 
     class ExitMenuItem : MenuItem
     {
         private ConsoleMenu _menu;
