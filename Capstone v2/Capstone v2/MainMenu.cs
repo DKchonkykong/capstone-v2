@@ -16,9 +16,9 @@ namespace Capstone_v2;
     //some code here might be changed 
     {
         _menuItems.Clear();
-        _menuItems.Add(new MainMenuItem.AddNewOrderMenuItem(_manager));
+        _menuItems.Add(new Order.AddNewOrderMenuItem(_manager));
         _menuItems.Add(new MainMenuItem.AddNewFoodMenuItem(_manager));
-        _menuItems.Add(new MainMenuItem.DisplayAllOrderMenu(_manager));
+        _menuItems.Add(new Order.DisplayAllOrderMenu(_manager));
         _menuItems.Add(new MainMenuItem.DisplayAllFoodMenuItem(_manager));
         _menuItems.Add(new ExitMenuItem(this));
     }
