@@ -19,6 +19,7 @@ internal class FoodManager
     {
         get { return _food; }
     }
+    
 
 //got this fixed sorta
 // only works adding customer name not displaying it?
@@ -48,14 +49,6 @@ internal class FoodManager
     {
         _food.Add(food);
     }
-// need to have this line here in foodmanager
-//doesn't work due to displayallorders not working
-//this doesn't really matter much more so that it is necesarry
-     public void AddOrder(Order.OrderMenu order)
-    {
-       _order.Add(order);
-     }
-  
 }
 
         //this is used to add a new food item although not working
