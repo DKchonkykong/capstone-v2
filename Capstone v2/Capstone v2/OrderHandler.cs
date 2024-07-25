@@ -1,8 +1,4 @@
-namespace Capstone_v2;
-//this will hold the lists of orders /done this
-//it will also be able to make new orders haven't done
-//then have be outputted to the console /done this
-//basically use ToString similar to code i have already have in other places
+namespace Capstone_v2; 
 
 //Summary: this should have something that takes all the information for an order
 //crates an order object then adds it to its own list
@@ -23,8 +19,6 @@ public class OrderHandler
     //should work
     internal List<Order.OrderMenu> _order;
     
-    //new code
-    //public List<Order> Orders { private set; get; } = new();
     //this is where orders will be added
     //I don't know if i am going to add it here
    
