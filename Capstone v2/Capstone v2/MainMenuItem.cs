@@ -44,7 +44,7 @@ internal class MainMenuItem
     }
 
 // this is for displaying all food items but fairly sure i need to have an actual list in food items for it to be working
-//seems to be grayed out? idk why it has to have 4 usages
+//seems to be grayed out?
     internal class DisplayAllFoodMenuItem : MenuItem
     {
         private IEnumerable<FoodItem> _foods;

@@ -7,7 +7,7 @@
 //I would ideally have both values in menuItems and then have it so it saves in the OrderHandler and also displays it there
 //then I can move on to something else like foods and then do finishing touches e.g., delivery, error checks, comments etc.
 
-Console.WriteLine("Hello, World!");
+//this seems fine
 
 FoodManager foodManager = new FoodManager();
 MainMenu MainMenu = new MainMenu(foodManager);

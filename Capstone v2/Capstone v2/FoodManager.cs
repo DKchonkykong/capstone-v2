@@ -13,6 +13,7 @@ internal class FoodManager
     public string Name { get; private set; }
 
     private List<FoodItem> _food { get; set; }
+    
 
     //Ienumerable means you can't really edit the list so it is good for making it more prodected which is used for these classes in question https://stackoverflow.com/questions/3628425/ienumerable-vs-list-what-to-use-how-do-they-work
     public IEnumerable<FoodItem> Foods
