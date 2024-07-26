@@ -17,10 +17,7 @@ internal class FoodManager
 
     //Ienumerable means you can't really edit the list so it is good for making it more prodected which is used for these classes in question
     //https://stackoverflow.com/questions/3628425/ienumerable-vs-list-what-to-use-how-do-they-work
-    public IEnumerable<FoodItem> Foods
-    {
-        get { return _food; }
-    }
+    public IEnumerable<FoodItem> Foods { get { return _food; } }
     
 //this is a list of foodItems currently there's two for testing purposes but will have more than 2 supposed to show up when you are picking a foodItem
 
@@ -50,7 +47,7 @@ internal class FoodManager
     {
         _food.Add(food);
     }
-//it wants to have this here
+//it wants to have this here instead of in OrderHandler
     public void AddOrder(Order.OrderMenu order)
     {
         Console.WriteLine("Something Witty");

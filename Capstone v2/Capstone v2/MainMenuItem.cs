@@ -43,7 +43,7 @@ internal class MainMenuItem
         }
     }
 
-// this is for displaying all food items but fairly sure i need to have an actual list in food items for it to be working
+// this is for displaying all food items but fairly sure I need to have an actual list in food items for it to be working
     internal class DisplayAllFoodMenuItem : MenuItem
     {
         private IEnumerable<FoodItem> _foods;
@@ -52,9 +52,9 @@ internal class MainMenuItem
         {
             _foods = foods;
         }
-        //might be necesarry?
-        public DisplayAllFoodMenuItem(FoodManager ingredients)
-        {}
+        //is necessary and for some reason wants ingredients
+         public DisplayAllFoodMenuItem(FoodManager ingredients)
+         {}
         
         public override string MenuText()
         {

@@ -11,6 +11,7 @@ namespace Capstone_v2;
         _manager = manager;
     }
     
+    
     //this is how it will most likely look for displaying menus pretty similar to how i have done it before
     // for some reason this doesn't show up correctly
     //some code here might be changed 
