@@ -13,7 +13,7 @@ internal class MainMenuItem
 
 // </Old code for adding foods will be changed to support for lists>
 
-
+// I think this structure works so maybe have similar one in order handler?
     internal class AddNewFoodMenuItem : MenuItem
     {
         private FoodManager _ingredients;
@@ -44,7 +44,6 @@ internal class MainMenuItem
     }
 
 // this is for displaying all food items but fairly sure i need to have an actual list in food items for it to be working
-//seems to be grayed out?
     internal class DisplayAllFoodMenuItem : MenuItem
     {
         private IEnumerable<FoodItem> _foods;

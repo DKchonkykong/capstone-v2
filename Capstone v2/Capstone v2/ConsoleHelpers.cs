@@ -8,7 +8,7 @@ namespace Capstone_v2
     public static class ConsoleHelpers
     {
         //This is for selecting things you want to pick
-        //could be an alterative way to select items?
+        
         public static bool GetChoice(string pMessage)
         {
             Console.WriteLine(pMessage);

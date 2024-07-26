@@ -23,7 +23,7 @@ namespace Capstone_v2;
    
     {
         _menuItems.Clear();
-        _menuItems.Add(new Order.AddNewOrderMenuItem(_manager));
+        //_menuItems.Add(new Order.AddNewOrderMenuItem(_manager));
         _menuItems.Add(new MainMenuItem.AddNewFoodMenuItem(_manager));
         _menuItems.Add(new Order.DisplayAllOrderMenu(_manager));
         _menuItems.Add(new MainMenuItem.DisplayAllFoodMenuItem(_manager));

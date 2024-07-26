@@ -25,7 +25,9 @@ public class Pizza
 }
 //when selecting no chicken it's supposed to be a pizza without that ingredient? so maybe i need to make multiple lists
 //that then you can pick?
-public class Toppings
+//i forgot to do something about this 
+
+/*public class Toppings
 {
     //struct then {
     //private unique ID 
@@ -44,4 +46,4 @@ public class Toppings
         return $"{Name} , {Price}";
     }
     
-}
+}*/

@@ -93,8 +93,8 @@ public class OrderHandler
 
             Console.WriteLine("Enter a customer name.");
             string name = Console.ReadLine();
-            OrderMenu order = new OrderMenu(name);
-            //This also seems to be problematic which causes it to not work idk why
+            Order.OrderMenu order = new Order.OrderMenu(name);
+            //This also seems problamatic since it wants it to be saved inside foodmanager
             _Ingredients.AddOrder(order);
         }
     }
@@ -106,6 +106,7 @@ public class OrderHandler
 //most of this stuff here hasn't been changed much
 public class Order
 {
+    //Displays whos order it is and any extra information e.g., delivery and the food items
     public class OrderMenu
     {
         //getter method and constructor
@@ -115,12 +116,12 @@ public class Order
         {
             Name = name;
         }
-//Displays whos order it is
+
 //think i can do the same to show them if it is a delivery
 //Would do this later - since it's going to be quite similar would need to have an if statement for delivery and calculations made in there.
         public override string ToString()
         {
-            return $"Order for: {Name}";
+            return $"Order for: {Name}, Total:";
         }
     }
     
@@ -168,6 +169,13 @@ public class Order
             _order = orders;
             _manager = manager;
         }
+//It wants me to do this which idk why because i already have another class that has the same stuff 
+//think ill work on fooditems and then other stuff
+        public DisplayAllOrderMenu(FoodManager manager)
+        {
+            _manager = manager;
+        }
+
         //displays text
         public override string MenuText()
         {

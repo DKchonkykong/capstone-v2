@@ -22,7 +22,8 @@ public class Burger
     }
 }
 //this will probably be similar to what i have before
-public class Garnishes
+//currently commented out since ingredients is already doing this
+/*public class Garnishes
 {
     //struct then {
     //private unique ID
@@ -41,5 +42,5 @@ public class Garnishes
         return $"{Name} , {Price}";
     }
     
-}
+}*/
 

@@ -23,6 +23,6 @@ public class Ingredients
 //Here would be something similar to constructor chaining
 //although done for both toppings and garnishes
 //makes it look cleaner https://jonskeet.uk/csharp/constructors.html
-//currently code is not working but idea is still there
+//currently this is supposed to be a sort of nested constructor
 public class Toppings(string name, int price) : Ingredients(name, price);
 public class Garnishes(string name, int price) : Ingredients(name, price);

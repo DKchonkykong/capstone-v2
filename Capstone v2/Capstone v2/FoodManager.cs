@@ -5,7 +5,7 @@ using System.Text;
 //currently holds the logic for shopManager and foodmanager
 
 
-//here's some code from shopManager which i think is the main logic
+//here's some code from shopManager which I think is the main logic
 
 internal class FoodManager
 {
@@ -15,15 +15,15 @@ internal class FoodManager
     private List<FoodItem> _food { get; set; }
     
 
-    //Ienumerable means you can't really edit the list so it is good for making it more prodected which is used for these classes in question https://stackoverflow.com/questions/3628425/ienumerable-vs-list-what-to-use-how-do-they-work
+    //Ienumerable means you can't really edit the list so it is good for making it more prodected which is used for these classes in question
+    //https://stackoverflow.com/questions/3628425/ienumerable-vs-list-what-to-use-how-do-they-work
     public IEnumerable<FoodItem> Foods
     {
         get { return _food; }
     }
     
+//this is a list of foodItems currently there's two for testing purposes but will have more than 2 supposed to show up when you are picking a foodItem
 
-//got this fixed sorta
-// only works adding customer name not displaying it?
       public FoodManager()
     {
         
@@ -50,13 +50,11 @@ internal class FoodManager
     {
         _food.Add(food);
     }
+//it wants to have this here
+    public void AddOrder(Order.OrderMenu order)
+    {
+        Console.WriteLine("Something Witty");
+    }
 }
 
-        //this is used to add a new food item although not working
-        //possibly because i am not using any folders which makes it so namespace _food isn't there
-       
-        // public void AddNewFoodItem(FoodItem food)
-        // {
-        //     _food.Add(food);
-        // }
-        
+
